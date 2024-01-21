@@ -5,6 +5,9 @@ import lombok.Getter;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * AtomicGold is a thread-safe class for managing gold values atomically.
+ *  * It provides methods for adding and subtracting gold, with bounds checking.
+ * <p>
  * Created by Alexey Kaptur on 19.01.2024
  * <p>
  * Contact: kaptur.swdev@gmail.com

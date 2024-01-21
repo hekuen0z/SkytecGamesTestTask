@@ -6,6 +6,8 @@ import lombok.Data;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * Represents an entity of clan.
+ * <p>
  * Created by Alexey Kaptur on 19.01.2024
  * <p>
  * Contact: kaptur.swdev@gmail.com
@@ -23,6 +25,10 @@ public class Clan {
         this.name = name;
         this.gold = new AtomicGold(0);
         this.id = STATIC_ID_COUNTER.getAndIncrement();
+    }
+
+    public int getGoldValue() {
+        return gold.getGold();
     }
 
 }
